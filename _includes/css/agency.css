@@ -22,6 +22,11 @@ body {
     color: #{{ site.data.template.color.grey }};
 }
 
+.fa-stack:hover .text-primary
+{
+    color: #{{ site.data.template.color.secondary }};
+}
+
 p {
     font-size: 14px;
     line-height: 1.75;
