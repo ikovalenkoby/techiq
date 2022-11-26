@@ -18,6 +18,10 @@ body {
 
 }
 
+.text-color-primary {
+    color: #{{ site.data.template.color.primary }};
+}
+
 .text-primary {
     color: #{{ site.data.template.color.grey }};
 }
@@ -367,7 +371,7 @@ section h3.section-subheading {
 
 @media(min-width:768px) {
     section {
-        padding: 150px 0;
+        padding: 130px 0;
     }
 }
 
@@ -751,6 +755,27 @@ aside.clients img {
         grid-template-rows: auto auto auto;
     }
 }
+
+.d-flex {
+    display: flex;
+}
+
+.align-items-baseline {
+    align-items: baseline;
+}
+
+.contact {
+    margin: 0 auto;
+    float: none;
+    padding: 4rem;
+}
+
+.contact h3{
+    flex-basis: 40%;
+    margin-right: 2rem;
+}
+
+
 
 section#contact {
     background-color: #222;
