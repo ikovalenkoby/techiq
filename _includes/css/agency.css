@@ -677,6 +677,80 @@ section h3.section-subheading {
 aside.clients img {
     margin: 50px auto;
 }
+/*clients*/
+.w-layout-grid {
+    display: -ms-grid;
+    display: grid;
+    grid-auto-columns: 1fr;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto auto;
+    grid-template-rows: auto auto;
+    grid-row-gap: 16px;
+    grid-column-gap: 16px;
+}
+
+.partners-grid {
+    width: 100%;
+    margin-top: 40px;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: auto auto;
+    grid-template-rows: auto auto;
+}
+
+.partner {
+    display: flex;
+    width: 100%;
+    height: 95px;
+    align-items: center;
+    border-radius: 6px;
+    background-color: #f6f6f6;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: -webkit-filter 200ms ease;
+    transition: -webkit-filter 200ms ease;
+    transition: filter 200ms ease;
+    transition: filter 200ms ease, -webkit-filter 200ms ease;
+}
+
+.partner:hover {
+    -webkit-filter: none;
+    filter: none;
+}
+
+.partners-img.smaller {
+    max-height: 43%;
+}
+
+.partners-img {
+    max-height: 58%;
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    vertical-align: middle;
+}
+
+.smaller {
+    display: inline-block;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 991px) {
+    .partners-grid {
+        -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        -ms-grid-rows: auto auto auto auto;
+        grid-template-rows: auto auto auto auto;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .partners-grid {
+        -ms-grid-rows: auto auto auto;
+        grid-template-rows: auto auto auto;
+    }
+}
 
 section#contact {
     background-color: #222;

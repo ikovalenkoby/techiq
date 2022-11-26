@@ -42,6 +42,21 @@ people:
     - title: google-plus
       url: #
 
+# Clients
+clients:
+  - name: Yandex
+    url: https://yandex.by/
+    img: yandex-logo.svg
+  - name: toptal
+    url: https://www.toptal.com/
+    img: toptal.png
+  - name: inApp
+    url: https://inapp.insure/
+    img: inapp.svg
+  - name: evroopt
+    url: https://evroopt.by/
+    img: euroopt.svg
+
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: twitter
